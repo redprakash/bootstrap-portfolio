@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
 * {
   box-sizing: border-box;
 }
-
+.my-titles {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+}
 .tech-icon {
   width: 100%;
 
