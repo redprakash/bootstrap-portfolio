@@ -71,14 +71,6 @@
       </div>
     </section>
 
-    <!-- <section class="p-2 my-quotes">
-      <div class="container d-flex align-items-center">
-        <div>
-          My daily quotes will be here, generated dynamically - Spider Man
-        </div>
-      </div>
-    </section> -->
-
     <section class="p-5 bg-secondary">
       <div class="container">
         <div class="row text-center g-4">
@@ -167,28 +159,51 @@
       </div>
     </section>
 
-    <section id="projects" class="p-5 bg-primary bg-light">
+    <section id="projects" class="p-5 bg-light">
       <div class="container">
         <h2 class="text-warning text-center my-titles">Projects</h2>
         <p class="text-center text-dark mt-2">
           Some of my individual and group projects
           <a href="#" class="text-info">View all</a>
         </p>
-        <div class="row g-4 p-3">
-          <div class="col-md-6 col-lg-4">
+        <!-- project-cards is custom class-->
+        <div class="row g-4 p-3 project-cards">
+          <div
+            class="col-md-6 col-lg-4"
+            data-bs-toggle="modal"
+            data-bs-target="#projectModal"
+          >
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img
-                  src="https://randomuser.me/api/portraits/men/11.jpg"
-                  class="mb-3"
-                />
-                <h4 class="card-tite mb-3">Project Name</h4>
-                <p class="card-text">Desc about project</p>
-                <a href="#" class="text-dark"><i class="fab fa-sass"></i></a>
-                <a href="#" class="text-dark"
-                  ><i class="fab fa-bootstrap"></i
-                ></a>
-                <a href="#" class="text-dark"> <i class="fab fa-github"></i></a>
+                <img src="./images/piggame.png" class="mb-3 img-fluid w-75" />
+                <h4 class="card-tite mb-3">Pig Game</h4>
+
+                <div class="projects-tech-icon">
+                  <i class="fab fa-sass"></i>
+                  <i class="fab fa-bootstrap"></i>
+
+                  <i class="fab fa-github"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-bs-toggle="modal"
+            data-bs-target="#projectModal"
+          >
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="./images/mixed.jpeg" class="mb-3 img-fluid w-75" />
+                <h4 class="card-tite mb-3">Mixed Projects</h4>
+
+                <div class="projects-tech-icon">
+                  <i class="fab fa-sass"></i>
+
+                  <i class="fab fa-js"></i>
+                  <i class="fab fa-github"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -201,12 +216,13 @@
                   class="mb-3"
                 />
                 <h4 class="card-tite mb-3">Project Name</h4>
-                <p class="card-text">Desc about project</p>
-                <a href="#" class="text-dark"><i class="fab fa-sass"></i></a>
-                <a href="#" class="text-dark"
-                  ><i class="fab fa-bootstrap"></i
-                ></a>
-                <a href="#" class="text-dark"> <i class="fab fa-github"></i></a>
+
+                <div class="projects-tech-icon">
+                  <i class="fab fa-sass"></i>
+                  <i class="fab fa-bootstrap"></i>
+
+                  <i class="fab fa-github"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -219,12 +235,13 @@
                   class="mb-3"
                 />
                 <h4 class="card-tite mb-3">Project Name</h4>
-                <p class="card-text">Desc about project</p>
-                <a href="#" class="text-dark"><i class="fab fa-sass"></i></a>
-                <a href="#" class="text-dark"
-                  ><i class="fab fa-bootstrap"></i
-                ></a>
-                <a href="#" class="text-dark"> <i class="fab fa-github"></i></a>
+
+                <div class="projects-tech-icon">
+                  <i class="fab fa-sass"></i>
+                  <i class="fab fa-bootstrap"></i>
+
+                  <i class="fab fa-github"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -237,71 +254,22 @@
                   class="mb-3"
                 />
                 <h4 class="card-tite mb-3">Project Name</h4>
-                <p class="card-text">Desc about project</p>
-                <a href="#" class="text-dark"><i class="fab fa-sass"></i></a>
-                <a href="#" class="text-dark"
-                  ><i class="fab fa-bootstrap"></i
-                ></a>
-                <a href="#" class="text-dark"> <i class="fab fa-github"></i></a>
+
+                <div class="projects-tech-icon">
+                  <i class="fab fa-sass"></i>
+                  <i class="fab fa-bootstrap"></i>
+
+                  <i class="fab fa-github"></i>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://randomuser.me/api/portraits/men/11.jpg"
-                  class="mb-3"
-                />
-                <h3 class="card-tite mb-3">Project Name</h3>
-                <p class="card-text">Desc about project</p>
-                <a href="#" class="text-dark"><i class="fab fa-sass"></i></a>
-                <a href="#" class="text-dark"
-                  ><i class="fab fa-bootstrap"></i
-                ></a>
-                <a href="#" class="text-dark"> <i class="fab fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://randomuser.me/api/portraits/women/12.jpg"
-                  class="mb-3"
-                />
-                <h4 class="card-tite mb-3">Project Name</h4>
-                <p class="card-text">Desc about project</p>
-                <a href="#" class="text-dark"><i class="fab fa-sass"></i></a>
-                <a href="#" class="text-dark"
-                  ><i class="fab fa-bootstrap"></i
-                ></a>
-                <a href="#" class="text-dark"> <i class="fab fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://randomuser.me/api/portraits/men/11.jpg"
-                  class="mb-3"
-                />
-                <h4 class="card-tite mb-3">Project Name</h4>
-                <p class="card-text">Desc about project</p>
-                <a href="#" class="text-dark"><i class="fab fa-sass"></i></a>
-                <a href="#" class="text-dark"
-                  ><i class="fab fa-bootstrap"></i
-                ></a>
-                <a href="#" class="text-dark"> <i class="fab fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
+          <div
+            class="col-md-6 col-lg-4"
+            data-bs-toggle="modal"
+            data-bs-target="#projectModal"
+          >
             <div class="card bg-light">
               <div class="card-body text-center">
                 <img
@@ -309,12 +277,13 @@
                   class="mb-3"
                 />
                 <h4 class="card-tite mb-3">Project Name</h4>
-                <p class="card-text">Desc about project</p>
-                <a href="#" class="text-dark"><i class="fab fa-sass"></i></a>
-                <a href="#" class="text-dark"
-                  ><i class="fab fa-bootstrap"></i
-                ></a>
-                <a href="#" class="text-dark"> <i class="fab fa-github"></i></a>
+
+                <div class="projects-tech-icon">
+                  <i class="fab fa-sass"></i>
+                  <i class="fab fa-bootstrap"></i>
+
+                  <i class="fab fa-github"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -326,24 +295,71 @@
       class="bg-dark p-5 text-center text-light position-relative"
       id="contact"
     >
-      <div class="container h4">
-        <p>
-          <i class="fas fa-envelope"></i>
-          &nbsp;&nbsp;
-          <i class="fas fa-mobile-alt"></i>
-          &nbsp;&nbsp;
-          <i class="fab fa-github"></i>
-          &nbsp;&nbsp;
-          <i class="fab fa-linkedin"></i>
-          <a
-            href="#"
-            class="position-absolute bottom-0 end-0 p-5 text-light h1"
-          >
+      <div class="container">
+        <div class="contact-links">
+          <a href="mailto:bhaktpoudel@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+
+          <a href="tel:0469392547"><i class="fas fa-mobile-alt"></i></a>
+
+          <a href="https://github.com/redprakash" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+
+          <a href="https://www.linkedin.com/in/prakashpoudel/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="#" class="position-absolute bottom-0 end-0 p-5 text-light">
             <i class="fas fa-arrow-circle-up"></i>
           </a>
-        </p>
+        </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade bg-dark"
+      id="projectModal"
+      tabindex="-1"
+      aria-labelledby="project-one"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="project-one">Project One</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center flex-column">
+            <img src="./images/piggame.png" class="img-fluid w-50" />
+            <p class="text-dark mt-2">
+              I will write something about the project
+            </p>
+            <div class="projects-tech-icon h2">
+              <a href="#" class="text-dark"><i class="fab fa-sass"></i></a>
+              <a href="#" class="text-dark"><i class="fab fa-bootstrap"></i></a>
+              <a href="#" class="text-dark"> <i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal Ends-->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"

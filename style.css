@@ -1,40 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 * {
   box-sizing: border-box;
 }
+
 .my-titles,
 h4 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 800;
   letter-spacing: 0.05rem;
 }
+
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #c2cbcf;
   line-height: 1.5rem;
   letter-spacing: 0.05rem;
   font-size: 1rem;
 }
+
 .tech-icon {
   width: 100%;
-
   margin-bottom: 2rem;
-  color: rgb(90, 119, 143);
+  color: #5a778f;
 }
-.profile-picture {
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-  border-radius: 50%;
-  opacity: 0.6;
+.tech-icon i:hover {
+  color: white;
+  cursor: pointer;
+  transition: color 1s ease;
 }
-/* Disable grayscale on hover */
-.profile-picture:hover {
+
+.project-cards img, .profile-picture {
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  /* Microsoft Edge and Firefox 35+ */
+  /* Disable grayscale on hover */
+}
+.project-cards img:hover, .profile-picture:hover {
   -webkit-filter: grayscale(0);
   filter: none;
 }
-.my-quotes {
-  background-color: #2f3e46;
-  color: rgb(165, 177, 177);
+
+.profile-picture {
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.contact-links a {
+  font-size: 1.2rem;
+  color: #5a778f;
+}
+.contact-links a i {
+  margin-left: 1rem;
+}
+.contact-links a:hover {
+  color: white;
+  transition: color 1s ease;
+}
+
+.projects-tech-icon i {
+  color: #5a778f;
+}
+
+.project-cards img {
+  min-height: 197px;
+}
+
+.col-md-6,
+.col-lg-4 {
+  cursor: pointer;
 }

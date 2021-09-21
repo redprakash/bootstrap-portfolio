@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$icon-colors: rgb(90, 119, 143);
+$letter-spacing: 0.05rem;
+
+* {
+  box-sizing: border-box;
+}
+.my-titles,
+h4 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 800;
+  letter-spacing: $letter-spacing;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #c2cbcf;
+  line-height: 1.5rem;
+  letter-spacing: $letter-spacing;
+  font-size: 1rem;
+}
+.tech-icon {
+  width: 100%;
+
+  margin-bottom: 2rem;
+  color: $icon-colors;
+  i {
+    &:hover {
+      color: white;
+      cursor: pointer;
+      transition: color 1s ease;
+    }
+  }
+}
+%grayscaleimg {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+
+  /* Disable grayscale on hover */
+  &:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+  }
+}
+.profile-picture {
+  @extend %grayscaleimg;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.contact-links {
+  a {
+    i {
+      margin-left: 1rem;
+    }
+    font-size: 1.2rem;
+    color: $icon-colors;
+    &:hover {
+      color: white;
+      transition: color 1s ease;
+    }
+  }
+}
+.projects-tech-icon {
+  i {
+    color: $icon-colors;
+  }
+}
+.project-cards {
+  img {
+    @extend %grayscaleimg;
+    min-height: 197px;
+  }
+}
+.col-md-6,
+.col-lg-4 {
+  cursor: pointer;
+}
