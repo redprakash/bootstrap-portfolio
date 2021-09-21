@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 * {
   box-sizing: border-box;
 }
-.my-titles {
+.my-titles,
+h4 {
   font-family: 'Roboto Slab', serif;
   font-weight: 800;
   letter-spacing: 0.05rem;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #c2cbcf;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
 }
 .tech-icon {
   width: 100%;
