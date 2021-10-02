@@ -50,7 +50,7 @@ p {
 }
 
 .contact-links a {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #5a778f;
 }
 .contact-links a i {
@@ -63,6 +63,7 @@ p {
 
 .projects-tech-icon i {
   color: #5a778f;
+  font-size: 1.5rem;
 }
 
 .project-cards img {
@@ -73,4 +74,8 @@ p {
 .col-md-6,
 .col-lg-4 {
   cursor: pointer;
+}
+
+.modal-btn a {
+  margin-left: 1rem;
 }
