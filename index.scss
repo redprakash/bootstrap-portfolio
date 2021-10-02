@@ -55,7 +55,7 @@ p {
     i {
       margin-left: 1rem;
     }
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: $icon-colors;
     &:hover {
       color: white;
@@ -66,6 +66,7 @@ p {
 .projects-tech-icon {
   i {
     color: $icon-colors;
+    font-size: 1.5rem;
   }
 }
 .project-cards {
@@ -78,4 +79,9 @@ p {
 .col-md-6,
 .col-lg-4 {
   cursor: pointer;
+}
+.modal-btn {
+  a {
+    margin-left: 1rem;
+  }
 }

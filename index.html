@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <script
       src="https://kit.fontawesome.com/ce65c35574.js"
       crossorigin="anonymous"
@@ -14,6 +33,7 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="./style.css" />
     <title>Prakash Poudel</title>
   </head>
@@ -248,16 +268,19 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4">
+          <div
+            class="col-md-6 col-lg-4"
+            data-bs-toggle="modal"
+            data-bs-target="#projectModal4"
+          >
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="./images/workingprojects.jpeg" class="mb-3" />
-                <h4 class="card-tite mb-3">Coding Soon</h4>
+                <img src="./images/calculator.png" class="mb-3" />
+                <h4 class="card-tite mb-3">JS Calculator</h4>
 
                 <div class="projects-tech-icon">
                   <i class="fab fa-sass"></i>
-                  <i class="fab fa-bootstrap"></i>
-
+                  <i class="fab fa-js"></i>
                   <i class="fab fa-github"></i>
                 </div>
               </div>
@@ -311,8 +334,6 @@
             ><i class="fas fa-envelope"></i
           ></a>
 
-          <a href="tel:0469392547"><i class="fas fa-mobile-alt"></i></a>
-
           <a href="https://github.com/redprakash" target="_blank"
             ><i class="fab fa-github"></i
           ></a>
@@ -349,21 +370,24 @@
           </div>
           <div class="modal-body d-flex align-items-center flex-column">
             <img src="./images/piggame.png" class="img-fluid w-50" />
-            <p class="text-dark mt-2">A simple javascript pig game.</p>
-            <div class="projects-tech-icon h2">
-              <a href="#" class="text-dark"><i class="fab fa-sass"></i></a>
-              <a href="#" class="text-dark"><i class="fab fa-js"></i></a>
-              <a href="#" class="text-dark"> <i class="fab fa-github"></i></a>
-            </div>
+            <p class="text-dark w-75 mt-4">A simple javascript pig game.</p>
           </div>
           <div class="modal-footer d-flex justify-content-center">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+            <section class="modal-btn d-flex mt-3">
+              <a
+                class="btn btn-outline-secondary btn-lg mr-2"
+                href="https://github.com/redprakash/piggame"
+                target="_blank"
+              >
+                GitHub</a
+              >
+              <a
+                class="btn btn-outline-success btn-lg"
+                href="https://redprakash.github.io/piggame/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </section>
           </div>
         </div>
       </div>
@@ -391,25 +415,28 @@
           </div>
           <div class="modal-body d-flex align-items-center flex-column">
             <img src="./images/mixed.jpeg" class="img-fluid w-50" />
-            <p class="text-dark mt-2">
+            <p class="text-dark w-75 mt-4">
               This is collection of some of my mini projects which I have code
               along over the past weeks. I have used html, css and javascript in
               these mini challenges.
             </p>
-            <div class="projects-tech-icon h2">
-              <a href="#" class="text-dark"><i class="fab fa-sass"></i></a>
-              <a href="#" class="text-dark"><i class="fab fa-html5"></i></a>
-              <a href="#" class="text-dark"> <i class="fab fa-github"></i></a>
-            </div>
           </div>
           <div class="modal-footer d-flex justify-content-center">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+            <section class="modal-btn d-flex mt-3">
+              <a
+                class="btn btn-outline-secondary btn-lg mr-2"
+                href="https://github.com/redprakash/practiceprojects"
+                target="_blank"
+              >
+                GitHub</a
+              >
+              <a
+                class="btn btn-outline-success btn-lg"
+                href="https://redprakash.github.io/practiceprojects/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </section>
           </div>
         </div>
       </div>
@@ -439,30 +466,84 @@
           </div>
           <div class="modal-body d-flex align-items-center flex-column">
             <img src="./images/simple_portfolio.png" class="img-fluid w-50" />
-            <p class="text-dark mt-2">
+            <p class="text-dark w-75 mt-4">
               This project is currently uses html and css/scss only. I will
               convert this into a React <i class="fab fa-react"></i> project/app
               in coming week.
             </p>
-            <div class="projects-tech-icon h2">
-              <a href="#" class="text-dark"><i class="fab fa-sass"></i></a>
-              <a href="#" class="text-dark"><i class="fab fa-bootstrap"></i></a>
-              <a href="#" class="text-dark"> <i class="fab fa-github"></i></a>
-            </div>
           </div>
           <div class="modal-footer d-flex justify-content-center">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+            <section class="modal-btn d-flex mt-3">
+              <a
+                class="btn btn-outline-secondary btn-lg mr-2"
+                href="https://github.com/redprakash/nology-prakash-portfolio"
+                target="_blank"
+              >
+                GitHub</a
+              >
+              <a
+                class="btn btn-outline-success btn-lg"
+                href="https://redprakash.github.io/nology-prakash-portfolio/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </section>
           </div>
         </div>
       </div>
     </div>
     <!--Modal 3 Ends-->
+
+    <!-- Modal 4 -->
+    <div
+      class="modal fade bg-dark"
+      id="projectModal4"
+      tabindex="-1"
+      aria-labelledby="project-four"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="project-four">
+              Simple Javascript Calculator
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center flex-column">
+            <img src="./images/calculator.png" class="img-fluid w-50" />
+            <p class="text-dark mt-4 w-75">
+              This is a simple javascript calculator which does the basic
+              calculations. The purpose of this project is to implement the
+              learning from the class .
+            </p>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <section class="modal-btn d-flex mt-3">
+              <a
+                class="btn btn-outline-secondary btn-lg mr-2"
+                href="https://github.com/redprakash/js-calculator"
+                target="_blank"
+              >
+                GitHub</a
+              >
+              <a
+                class="btn btn-outline-success btn-lg"
+                href="https://redprakash.github.io/js-calculator/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal 4 Ends-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
